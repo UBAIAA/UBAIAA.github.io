@@ -1,0 +1,1798 @@
+/**************************************************---COVER- DELETE LATER---***********************************************/
+
+#naming h1, h2 {
+    color: white;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+}
+
+/***************************************************---HEADER---***********************************************/
+
+body {
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: "Helvetica";
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.section-heading {
+    font-size: 4rem;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Avenir;
+    font-weight: bold;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(22, 22, 22);
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.skippy {
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.content, .overlay {
+    grid-area: 1 / 1;
+}
+
+@media screen and (min-width: 601px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    #navv {
+        padding: 0px;
+        z-index: 20;
+    }
+
+    div.name-head {
+        font-size: 3.1vw;
+    }
+
+    div.Name {
+        font-size: 32vw;
+    }
+
+    div.name-foot {
+        font-size: 3vw;
+        color: white;
+        z-index: 2;
+        letter-spacing: 1rem;
+        line-height: 79%;
+        margin-top: 25px;
+    }
+
+    div.head-name {
+        padding-top: 105px;
+        z-index: 1;
+    }
+
+    h2.teams {
+        font-size: 13vw;
+    }
+
+    p.team-info {
+        font-size: 7vw;
+    }
+
+    div.marg-10 {
+        margin-top: 10rem;
+    }
+
+    div.marg-20 {
+        margin-top: 20rem;
+    }
+
+    #head {
+        height: 1830px;
+        display: grid;
+        margin-top: -70px;
+        padding-top: 70px;
+    }
+
+    .head-mobile {
+        display: none;
+    }
+
+    .stars {
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+        position: fixed;
+    }
+
+    .rocket {
+        width: 40vw;
+        height: 45vw;
+        z-index: 1;
+        position: fixed;
+        left: 70%;
+    }
+
+    .sat {
+        width: 30vw;
+        height: 30vw;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .flex-section {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        /*background-color: #F54EA2;*/
+    }
+
+    #team-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-container {
+        width: 100%;
+        display: flex;
+        padding: 0 20px 0 20px;
+        justify-content: space-between;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .teams-logo {
+        width: 17vw;
+        height: 17vw;
+        z-index: 1;
+    }
+
+    .team-heading {
+        letter-spacing: 0.5rem;
+        background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-weight: lighter;
+        font-size: 5.7vw;
+    }
+
+    .trans {
+        background-color: transparent;
+        border: none;
+        width: 35%;
+        height: 30%;
+        /*background-color: #cbcb26;*/
+    }
+
+    #aiaa-logo {
+        width: 45vw;
+        height: 15vw;
+    }
+
+    .section-para p {
+        color: black;
+        font-size: larger;
+    }
+
+    #team-container-mobile {
+        display: none;
+    }
+
+    #eboard-container {
+        display: block;
+    }
+
+    #eboard-container-mobile {
+        display: none;
+    }
+
+    .marg-r-30 {
+        width: 17vw;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        box-shadow: 1px 1px 10px 2px #bfbaba;
+    }
+
+    #gallery-container {
+        width: 80%;
+    }
+
+    #gallery-container-mobile {
+        display: none;
+    }
+
+    .carousel-inner img {
+        width: 55vw;
+        height: 45vw;
+    }
+
+    #dashboard-container {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        /*background-color: #bfbaba;*/
+    }
+
+    #dashboard-container-mobile {
+        display: none;
+    }
+
+    #footer-mobile {
+        display: none;
+    }
+
+    #footer {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        color: white;
+    }
+
+    #contact-container {
+        display: flex;
+        justify-content: center;
+        /*background-color: #F54EA2;*/
+        width: 90%;
+        margin-bottom: 40px;
+        z-index: 2;
+    }
+
+    #contact-container-mobile {
+        display: none;
+    }
+
+    #contact-form-container {
+        width: 50%;
+        text-align: center;
+        /*background-color: #fbb040;*/
+    }
+
+    #my-details-container {
+        width: 35%;
+        margin-left: 6%;
+        /*background-color: #65799b;*/
+        z-index: 2;
+    }
+
+    /*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
+    #dbf-head {
+        height: 2600px;
+        margin-top: -70px;
+    }
+
+    #dbf-head-mobile {
+        display: none;
+    }
+
+    .buildings {
+        width: 110%;
+        height: 700px;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .moon {
+        width: 20rem;
+        height: 20rem;
+        z-index: 1;
+        left: 3%;
+        position: fixed;
+    }
+
+    .airplane {
+        width: 20rem;
+        height: 10rem;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .sun {
+        width: 20rem;
+        height: 20rem;
+        z-index: 1;
+        left: 70%;
+        position: fixed;
+    }
+
+    .cloud {
+        width: 500px;
+        height: 250px;
+        z-index: 0;
+        top: 15%;
+        position: fixed;
+        /*background-color: #97ebf4;*/
+
+    }
+
+    #about-logo {
+        padding-top: 10px;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #captain-pic {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #micro-head-mobile {
+        display: none;
+    }
+
+    #micro-team-container {
+        text-align: center;
+        width: 80%;
+    }
+
+    #micro-team-container-mobile {
+        display: none;
+    }
+
+    .micro-team-pic {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #achiv-container-mobile {
+        display: none;
+    }
+
+    #real-dashboard {
+        padding-top: 30px;
+        height: 100%;
+        overflow: auto;
+    }
+
+    /*MICROGGGG*/
+    #micro-head {
+        height: 3300px;
+        margin-top: -70px;
+    }
+
+    .earth {
+        width: 50rem;
+        height: 50rem;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .mars {
+        position: fixed;
+        width: 110vw;
+        height: 65vw;
+        z-index: 1;
+        left: -5%;
+    }
+
+
+    .rover {
+        position: fixed;
+        width: 12vw;
+        height: 10vw;
+        z-index: 1;
+        left: 60%;
+    }
+
+    .micro-rocket {
+        width: 28vw;
+        height: 30vw;
+        z-index: 2;
+        position: fixed;
+        top: 25%;
+    }
+
+    .micro-stars {
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+        top: 10%;
+        transform: scale(1.6);
+        position: fixed;
+    }
+
+
+    .astro {
+        z-index: 1;
+        position: fixed;
+        top: 10%;
+        width: 10vw;
+        height: 15vw;
+    }
+
+    .micro-sat {
+        z-index: 1;
+        position: fixed;
+        top: 70%;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .micro-heading {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        left: 10%;
+    }
+
+    .micro-text {
+
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-size: 12vw;
+        letter-spacing: 1rem;
+    }
+
+    .micro-foot {
+        color: white;
+        letter-spacing: 6rem;
+        font-weight: bold;
+        font-size: 23vw;
+    }
+
+    .skip {
+        position: fixed;
+        z-index: 3;
+        left: 80%;
+        top: 10%;
+    }
+
+    /*##MEMBERS*/
+    #members-head {
+        width: 100%;
+        height: 2800px;
+        margin-top: -70px;
+        background-color: black;
+    }
+
+    #members-head-mobile {
+        display: none;
+    }
+
+    .people {
+        width: 30vw;
+        height: 35vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .members-text {
+        z-index: 2;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5vw;
+        text-align: center;
+        letter-spacing: 1rem;
+        font-weight: bold;
+    }
+
+    .members-heading {
+        z-index: 2;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+    }
+
+    .section-heading-m {
+        margin: auto;
+        font-size: 5vw;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        font-family: Avenir;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .section-heading-pic {
+        width: 45vw;
+        height: 15vw;
+        margin-bottom: 17px;
+        margin-top: -3.5vw;
+        z-index: 1;
+    }
+
+    .achv-title-mobile {
+        display: none;
+    }
+
+    #achiv-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .achv-box {
+        margin-left: 40px;
+    }
+
+    .hi {
+        background-color: transparent;
+        border: none;
+        border-radius: 60%;
+        font-style: oblique;
+        font-size: 2vw;
+        padding: 5px 0 5px 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    .hi:hover {
+        color: yellow;
+        font-style: normal;
+    }
+
+    .chat-b {
+        width: 23vw;
+        height: 16vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .chat-w {
+        width: 23vw;
+        height: 16vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .letters {
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .mem-bubble {
+        position: fixed;
+        width: 22vw;
+        height: 13vw;
+        bottom: 0;
+        top: -20vw;
+        left: 45vw;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+
+    }
+
+    .made {
+        width: 23vw;
+        height: 18vw;
+    }
+    .eb{
+    width: 17vw;
+    height: 26vw;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 600px) {
+    .nav-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #navv {
+        display: none;
+        z-index: 40;
+    }
+
+    div.Name {
+        font-size: 37vw;
+    }
+
+    div.name-head {
+        font-size: 8.5vw;
+    }
+
+    div.name-foot {
+        font-size: 4vw;
+        color: white;
+        z-index: 2;
+        letter-spacing: 1rem;
+        line-height: 120%;
+        margin-top: 25px;
+    }
+
+    div.head-name {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    h2.teams {
+        font-size: 20vw;
+    }
+
+    p.team-info {
+        font-size: 1.4rem;
+    }
+
+    div.marg-10 {
+        margin-top: 10rem;
+    }
+
+    div.marg-20 {
+        margin-top: 15rem;
+    }
+
+    #head {
+        display: none;
+    }
+
+    .head-mobile {
+        height: 1900px;
+        display: grid;
+        padding-top: 100px;
+    }
+
+    .stars {
+        width: 200vw;
+        height: 1000px;
+        z-index: 0;
+        position: fixed;
+    }
+
+    .rocket {
+        width: 35rem;
+        height: 40rem;
+        z-index: 1;
+        position: fixed;
+        left: 23%;
+    }
+
+    .sat {
+        width: 80vw;
+        height: 80vw;
+        z-index: 1;
+        position: fixed;
+        top: 5%;
+    }
+
+    .team-heading {
+        letter-spacing: 0.5rem;
+        background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        /*font-weight: lighter;*/
+        font-size: 11vw;
+    }
+
+    #team-container-mobile {
+        display: block;
+    }
+
+    #team-container {
+        display: none;
+    }
+
+    #aiaa-logo {
+        width: 70vw;
+        height: 30vw;
+    }
+
+    .section-para p {
+        color: black;
+        font-size: larger;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    #eboard-container {
+        display: none;
+    }
+
+    #eboard-container-mobile {
+        display: block;
+    }
+
+    .eboard-row {
+        margin-top: 10px;
+    }
+
+    .marg-r-30 {
+        width: 42vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        box-shadow: 1px 1px 10px 2px #bfbaba;
+    }
+
+    #gallery-container {
+        display: none
+    }
+
+    .carousel-inner img {
+        /*width: 55vw;*/
+        height: 75vw;
+    }
+
+    #dashboard-container {
+        display: none;
+    }
+
+    #dashboard-container-mobile {
+        text-align: center;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #contact-container {
+        display: none;
+    }
+
+    #contact-container-mobile {
+        text-align: center;
+    }
+
+    #contact-form-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #my-details-container {
+        padding-top: 40px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2;
+        padding-bottom: 20px;
+    }
+
+    /*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
+    #dbf-head {
+        display: none;
+    }
+
+    #dbf-head-mobile {
+        height: 2600px;
+    }
+
+    .buildings {
+
+        width: 240%;
+        height: 600px;
+        z-index: 1;
+
+        position: fixed;
+    }
+
+    .moon {
+        width: 10rem;
+        height: 10rem;
+        z-index: 0;
+        left: -10%;
+        position: fixed;
+    }
+
+    .airplane {
+        top: 35%;
+        left: 30%;
+        width: 10rem;
+        height: 5rem;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .sun {
+        width: 15rem;
+        height: 15rem;
+        z-index: 0;
+        left: 70%;
+        position: fixed;
+    }
+
+    .cloud {
+        width: 500px;
+        height: 250px;
+        z-index: 0;
+        top: 25%;
+        position: fixed;
+    }
+
+    #about-logo {
+        padding-top: 20px;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #captain-pic {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    /*------------MICROG############MICROG%%%%%%%%%%MICROG-----------------------*/
+    .micro-team-pic {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #micro-head-mobile {
+        height: 3300px;
+    }
+
+    #micro-head {
+        display: none;
+    }
+
+    .earth {
+        width: 100vw;
+        height: 100vw;
+        z-index: 4;
+        top: 40%;
+        position: fixed;
+    }
+
+    .micro-rocket {
+        width: 68vw;
+        height: 70vw;
+        z-index: 2;
+        position: fixed;
+        top: 35%;
+    }
+
+    .astro {
+        z-index: 1;
+        position: fixed;
+        top: 20%;
+        width: 20vw;
+        height: 25vw;
+    }
+
+    .micro-sat {
+        z-index: 1;
+        position: fixed;
+        top: 70%;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .micro-stars {
+        width: 180%;
+        height: 1000px;
+        z-index: 0;
+        top: 10%;
+        transform: scale(1.6);
+        position: fixed;
+    }
+
+    .mars {
+        position: fixed;
+        width: 180vw;
+        height: 130vw;
+        z-index: 1;
+        left: -40%;
+    }
+
+    .rover {
+        position: fixed;
+        width: 15vw;
+        height: 13vw;
+        z-index: 1;
+        left: 67%;
+    }
+
+    .micro-heading {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        left: 10%;
+    }
+
+    .micro-text {
+
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-size: 17vw;
+        letter-spacing: 1rem;
+    }
+
+    .micro-foot {
+        color: white;
+        font-weight: bold;
+        font-size: 40vw;
+    }
+
+    .skip {
+        position: fixed;
+        z-index: 3;
+        top: 12.5%;
+        left: 70%;
+    }
+
+    #micro-team-container-mobile {
+        text-align: center;
+        width: 80%;
+    }
+
+    #micro-team-container {
+        display: none;
+    }
+
+    #achiv-container {
+        display: none;
+    }
+
+    #real-dashboard {
+        padding-top: 100px;
+        height: 100%;
+        overflow: auto;
+    }
+
+    #members-head {
+        display: none;
+    }
+
+    #members-head-mobile {
+        width: 100%;
+        height: 2900px;
+    }
+
+    .people {
+        width: 70vw;
+        height: 75vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .members-text {
+        z-index: 2;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 7vw;
+        margin-left: 10px;
+        text-align: center;
+        letter-spacing: 1rem;
+        font-weight: bold;
+    }
+
+    .members-heading {
+        z-index: 2;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+
+    .section-heading-m {
+        font-size: 13vw;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        font-family: Avenir;
+        font-weight: bold;
+        align-items: center;
+        margin-top: 6vw;
+    }
+
+    .section-heading-pic {
+        width: 95vw;
+        height: 35vw;
+        margin-bottom: 20px;
+        margin-top: -1vw;
+        z-index: 1;
+    }
+
+    .achv-title {
+        display: none;
+    }
+
+    .chat-b {
+        width: 55vw;
+        height: 40vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .chat-w {
+        width: 55vw;
+        height: 40vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .letters {
+        width: 80vw;
+        height: 80vw;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .mem-bubble {
+        position: fixed;
+        width: 32vw;
+        height: 23vw;
+        bottom: 0;
+        top: -25vw;
+        left: 65vw;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+
+    }
+
+    .dash-back {
+
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 10vw;
+        left: 0;
+        right: 0;
+    }
+    .eb{
+    /*height: 80vw;*/
+        min-height: 85vw;
+}
+}
+
+.mars-container {
+    position: fixed;
+    z-index: 1;
+}
+
+#micro-team-container img {
+    border-radius: 50%;
+}
+
+#micro-team-container-mobile img {
+    border-radius: 50%;
+}
+
+#captain-container {
+    text-align: center;
+    width: 80%;
+}
+
+#captain-container img {
+    border-radius: 50%;
+}
+
+.Name {
+    /*background-color: #acdbdb;*/
+    letter-spacing: 0.5rem;
+    color: white;
+    font-weight: lighter;
+    font-family: Tahoma;
+    z-index: 2;
+    line-height: 79%;
+    background-image: linear-gradient(50deg, #fbb040 0%, #f9ed32 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-head {
+    color: white;
+    z-index: 2;
+    line-height: 79%;
+}
+
+.teams {
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: lighter;
+    z-index: 0;
+}
+
+.team-info {
+    color: white;
+    letter-spacing: 0.5rem;
+    font-weight: lighter;
+    z-index: 0;
+
+}
+
+.wah {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+
+/***************************************************---UB AIAA CHAPTER---***********************************************/
+
+.section-para {
+    width: 80.5%;
+    z-index: 3;
+}
+
+
+/***************************************************---TEAMS---***********************************************/
+
+
+/***************************************************---Eboard---***********************************************/
+
+.title {
+    font-weight: bold;
+    font-size: 1.5vw
+}
+
+.title-name {
+    font-size: 1.4vw
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad-5 {
+    padding: 0;
+}
+
+.pad-5:hover .eboard-email {
+    display: block;
+    opacity: 1;
+}
+
+.eboard-email {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 120px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.83);
+}
+
+.br-6 {
+    border-radius: 6px;
+}
+
+
+
+/***************************************************---DASHBOARD---***********************************************/
+
+
+.mobile-card {
+    width: 30%;
+}
+
+#dash-back {
+    width: 100%;
+    /*height: 90%;*/
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 20px;
+    overflow: auto;
+}
+
+#dash-body {
+    width: 100%;
+    padding: 10px;
+    /*height: 100%;*/
+}
+
+
+#meetings-desk {
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#events-desk {
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.dash-teams {
+     background: #dedede;
+    font-size: 1.2rem;
+    width: 8rem;
+    color: black;
+    box-shadow: -5px 10px 10px 0 #bababa;
+    border-radius: 0.5rem;
+    border: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#list-tab {
+    padding-top: 20px;
+}
+
+.dash-card-body {
+    padding: 5px;
+}
+
+.dash-card {
+    margin-top: 10px;
+    color: white;
+    border: none;
+    box-shadow: -5px 10px 10px 0 #bababa;}
+
+.dash-card-mobile {
+    width: 10rem;
+    display: inline-block;
+    margin: 5px;
+    border: none;
+    color: white;
+    box-shadow: -5px 10px 10px 0 #bababa;
+}
+
+.dbf {
+    background-image: linear-gradient(50deg, #8fbe5d 0%, #6eaf26 74%);
+}
+
+.micro {
+    background-image: linear-gradient(50deg, #fc6e51 0%, #db391e 74%);
+}
+
+.club {
+    background-image: linear-gradient(50deg, #622774 0%, #c53364 74%);
+}
+
+.club-mobile {
+    background-image: linear-gradient(50deg, #000000 0%, #4c2a2a 74%);
+}
+
+.column {
+    margin: 0;
+    width: 30%;
+    /*background-color: #cbcb26;*/
+    height: 100%;
+}
+
+/***************************************************---Contact---***********************************************/
+#contact {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(31, 98, 102)), color-stop(25%, rgb(79, 128, 24)), color-stop(50%, rgb(143, 75, 22)), color-stop(75%, rgb(153, 24, 27)), color-stop(100%, rgba(130, 100, 70, 1)));
+    background-size: 100% 400%;
+    -webkit-animation: animateGradient 8s infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 2s;
+    padding-bottom: 0;
+
+}
+
+@-webkit-keyframes animateGradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+.social-icons {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.social-icons:hover {
+    color: #fbb040;
+    /*color: #42b3c4;*/
+}
+
+#middle-foot {
+    text-align: center;
+    width: 262px;
+    padding-top: 6px;
+}
+
+#right-foot {
+    width: 262px;
+    text-align: center;
+}
+
+#left-foot {
+    width: 262px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+
+}
+
+#contact-form button:hover {
+    background: white;
+    color: rgb(19, 56, 111);
+}
+
+.ub-link {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 2%;
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.ub-link:hover {
+    background: white;
+    color: rgb(19, 56, 111);
+}
+
+/***************************************************---DBF---***********************************************/
+
+.carousel-caption {
+    z-index: 0;
+}
+
+.transform {
+    width: 70%;
+    margin-left: -35%;
+    text-align: center;
+    font-size: 150%;
+. transform-origin(50 %, 50 %);
+}
+
+#easing_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#easing {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.cloud2 {
+    width: 1000px;
+    height: 500px;
+    z-index: 0;
+    top: 70%;
+    position: fixed;
+}
+
+.cloud3 {
+    width: 500px;
+    height: 250px;
+    z-index: 1;
+    top: 55%;
+    position: fixed;
+}
+
+.cloud4 {
+    width: 800px;
+    height: 450px;
+    z-index: 1;
+    top: 25%;
+    position: fixed;
+}
+
+.cloud5 {
+    width: 800px;
+    height: 450px;
+    z-index: 0;
+    top: 30%;
+    position: fixed;
+}
+
+
+.initials {
+    /*background-image: linear-gradient(50deg, rgb(135, 51, 160) 0%, rgb(197, 51, 100) 74%);*/
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /*font-weight: lighter;*/
+    font-size: 5rem;
+}
+
+.about-logo {
+    width: 250px;
+    height: 250px;
+}
+
+/**********---MICRO-G---*****************************---MICRO-G---*************************************---MICRO-G---************************************************************************/
+#micro--head {
+    height: 2600px;
+    margin-top: -70px;
+}
+
+.achv-clipart {
+    width: 20vw;
+    height: 30vw;
+
+}
+
+#left-achv {
+    float: left;
+    width: 22%;
+    /*height: 5rem;*/
+}
+
+#right-achv {
+    float: right;
+    width: 78%;
+    height: 100%;
+
+}
+
+.tab-pane {
+    color: white;
+    font-size: 1.5vw;
+}
+
+/**************************************************---members---***********************************************/
+.alumni-container {
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+
+#members-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 90%;
+    height: 40rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    box-shadow: 1px 1px 10px 2px #bfbaba;
+}
+
+#mem-heading {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.cont-astro {
+    position: absolute;
+    width: 15vw;
+    height: 10vw;
+    left: 20vw;
+}
+
+.pixel {
+    /*position:fixed ;*/
+    width: 5vw;
+    height: 5vw;
+}
+
+
+.imaginiation {
+    width: 50vw;
+    height: 50vw;
+    color: white;
+}
+
+
+#left {
+    overflow: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#right {
+    overflow: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.mem-head {
+    font-size: 4vh;
+    margin-left: 15px;
+}
+
+/**************************************************---EXTRAS---***********************************************/
+
+
+.inline {
+    display: inline;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.relative {
+    position: relative;
+}
+
+.stick {
+    position: fixed;
+}
+
+.black {
+    background-color: black;
+}
+
+.pad-50 {
+    padding-top: 105px;
+}
+
+
+.yellow-grad {
+    background-image: linear-gradient(50deg, #fbb040 0%, #f9ed32 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.blue-grad {
+    background-image: linear-gradient(50deg, #65799b 0%, #5e2563 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.h-80 {
+    height: 40rem;
+}
+
+
+#dash-body-dbf {
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+#dash-body-micro {
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+#dash-body-aiaa {
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+
+#dbf-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}
+
+#micro-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}
+
+#aiaa-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+}
+
+.link-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.link-box-button{
+    background: #dedede;
+    font-size: 0.95rem;
+    width: 8rem;
+    color: black;
+    box-shadow: -5px 10px 10px 0 #bababa;
+    border-radius: 0.2rem;
+    border: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    padding: 0.8em 0.8em 0.78em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+.link-box-button:hover {
+    background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
+    color: white;
+    text-decoration: none;
+}
+.link-box-button-black{
+    background: #242424;
+    font-size: 0.95rem;
+    width: 8rem;
+    color: white;
+    box-shadow: -5px 10px 10px 0 #000000;
+    border-radius: 0.2rem;
+    /*border: white;*/
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    padding: 0.8em 0.8em 0.78em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+.link-box-button-black:hover {
+    background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
+    color: white;
+    text-decoration: none;
+}
+.card-link{
+    text-decoration: none;
+}
