@@ -1740,11 +1740,15 @@ textarea {
 }
 
 .grid-container {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: auto;
-    grid-gap: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: center;
+}
 
+.team-card{
+    width: 20vw;
+    margin-bottom: 20px;
 }
 
 .link-box{
