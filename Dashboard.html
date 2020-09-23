@@ -13,7 +13,7 @@
     <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 </head>
 <body>
-<div class="fixed-top nav-mobile" style="background-color: #5e2563" >
+<div class="fixed-top nav-mobile" style="background-color: #5e2563">
     <div class="collapse" id="navbarToggleExternalContent">
         <ul class="nav justify-content-center ">
             <li class="nav-item">
@@ -45,7 +45,7 @@
         </button>
     </nav>
 </div>
-<nav id="navv" style="background-color: #5e2563"
+<nav id="navv" style="background-color: rgb(94,37,99)"
      class="sticky-top">
     <ul class="nav justify-content-center ">
         <li class="nav-item">
@@ -73,14 +73,14 @@
         DashBoard
     </h1>
     <div id="dashboard-container-mobile">
-            <div style="margin: 0 20px 20px 20px;" class="progress">
-                <div id="prog-mob" class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                     role="progressbar"
-                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
+        <div style="margin: 0 20px 20px 20px;" class="progress">
+            <div id="prog-mob" class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                 role="progressbar"
+                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
             </div>
-            <button  onclick="go_light()" type="button" class="btn btn-light">Light</button>
-            <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
+        </div>
+        <button onclick="go_light()" type="button" class="btn btn-light">Light</button>
+        <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
         <div style="margin-top: 20px " class="text-center">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-outline-success">
@@ -104,52 +104,57 @@
                 </label>
             </div>
         </div>
-
+        <hr>
+        <div class="link-box">
+            <a class="link-box-button" target="_blank"
+               href="https://calendar.google.com/calendar/embed?src=buffaloaiaa%40gmail.com&ctz=America%2FNew_York"><span> <i
+                    class="far fa-calendar-alt"> </i> </span>Calendar</a>
+        </div>
         <div id="dash-body-dbf" style="padding-top: 20px">
             <div id="dbf-meetings">
                 <div class="eboard-row">
-                     <div id="dbf-meet-mob">
+                    <div id="dbf-meet-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
             <div id="dbf-events">
-                <div class="eboard-row" >
-                   <div id="dbf-eve-mob">
+                <div class="eboard-row">
+                    <div id="dbf-eve-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="dash-body-micro" style="padding-top: 20px">
             <div id="micro-meetings">
-                <div class="eboard-row" >
+                <div class="eboard-row">
                     <div id="micro-meet-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
             <div id="micro-events">
-               <div class="eboard-row" >
+                <div class="eboard-row">
                     <div id="micro-eve-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="dash-body-aiaa" style="padding-top: 20px">
             <div id="aiaa-meetings">
-                <div class="eboard-row" >
+                <div class="eboard-row">
                     <div id="aiaa-meet-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
             <div id="aiaa-events">
-                <div class="eboard-row" >
+                <div class="eboard-row">
                     <div id="aiaa-eve-mob">
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,8 +168,8 @@
             </div>
         </div>
         <button onclick="go_light()" type="button" class="btn btn-light">Light</button>
-            <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
-        <br >
+        <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
+        <br>
         <div class="btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 15px">
             <label class="btn btn-outline-info  active">
                 <input onclick="show_meeting()" type="radio" name="options" id="option1" checked> Meetings
@@ -181,13 +186,13 @@
                             <h3 class="dash-teams">DBF</h3>
                         </center>
                         <div id="dbf-meet">
-<!--                            <a href="#" class="card-link">-->
-<!--                                <div class="card dash-card dbf text-center dash-cards">-->
-<!--                                    <div class="card-body dash-card-body">-->
-<!--                                        <h5 style="margin: 0" class="card-title">tgtgt</h5>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </a>-->
+                            <!--                            <a href="#" class="card-link">-->
+                            <!--                                <div class="card dash-card dbf text-center dash-cards">-->
+                            <!--                                    <div class="card-body dash-card-body">-->
+                            <!--                                        <h5 style="margin: 0" class="card-title">tgtgt</h5>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </a>-->
                         </div>
                     </div>
                     <div class="column">
@@ -237,10 +242,21 @@
             </div>
         </div>
     </div>
+    <div id="calendar">
+        <div>
+            <h1 class="section-heading blue-grad" id="dash-head-2" style="margin-bottom: 10px">
+                Calendar
+            </h1>
+        </div>
+        <div id="calender-container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnVmZmFsb2FpYWFAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=1&amp;title=UB_AIAA%20Calendar"
+                    style="border:0" width="900" height="700" frameborder="0" scrolling="no"></iframe>
+            </iframe>
+        </div>
+    </div>
 </div>
 <!-- Compressed JavaScript -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-
 <script src="js/skrollr.js"></script>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/b6d5ddd578.js"></script>

@@ -48,7 +48,14 @@ section {
     font-weight: bold;
     align-items: center;
 }
-
+#dash-head{
+    transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+}
+#prog_bar{
+    transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+}
 section:nth-child(2n) {
     background-color: rgb(22, 22, 22);
 }
@@ -66,6 +73,10 @@ section:nth-child(2n + 1) {
 
 .nav-link {
     font-size: 20px;
+    transition: color 0.5s;
+}
+.nav-link:hover {
+    color: #9d9d9d;
 }
 
 .content, .overlay {
@@ -254,9 +265,9 @@ section:nth-child(2n + 1) {
 
     #dashboard-container {
         width: 100%;
-        height: 100%;
+        height: 75%;
         padding: 20px;
-        /*background-color: #bfbaba;*/
+        overflow: scroll;
     }
 
     #dashboard-container-mobile {
@@ -388,6 +399,8 @@ section:nth-child(2n + 1) {
         padding-top: 30px;
         height: 100%;
         overflow: auto;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
     }
 
     /*MICROGGGG*/
@@ -640,6 +653,9 @@ section:nth-child(2n + 1) {
 
 /*PHONE*/
 @media screen and (max-width: 600px) {
+    #calendar{
+        display: none;
+    }
     .nav-mobile {
         display: block;
         width: 100%;
@@ -1313,6 +1329,8 @@ section:nth-child(2n + 1) {
     text-align: center;
     text-decoration: none;
     margin: 5px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
 }
 
 #list-tab {
@@ -1800,4 +1818,11 @@ textarea {
 }
 .card-link{
     text-decoration: none;
+}
+#calender-container{
+    /*display: inline-flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    width: 100%;
+    text-align: center;
 }

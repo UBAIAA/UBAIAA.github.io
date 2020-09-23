@@ -221,6 +221,7 @@ function AIAA_eve(data) {
 function go_dark() {
     var back1 = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
+    var head1 = document.getElementById('dash-head-2');
     document.getElementById('semester').style.color = "white";
     document.getElementById('prog_bar').style.backgroundColor = "#242424";
     var cards_mob = document.querySelectorAll(".dash-card-mobile");
@@ -241,12 +242,14 @@ function go_dark() {
 	}
     back1.style.backgroundColor = 'rgb(22, 22, 22)';
     head.style.backgroundImage = 'linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)';
+    head1.style.backgroundImage = 'linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)';
 
 }
 
 function go_light() {
     var back = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
+    var head1 = document.getElementById('dash-head-2');
     document.getElementById('semester').style.color = "black";
     document.getElementById('prog_bar').style.backgroundColor = "#dedede";
 
@@ -264,6 +267,7 @@ function go_light() {
 	}
     back.style.backgroundColor = 'white';
     head.style.backgroundImage = 'linear-gradient(50deg, #65799b 0%, #5e2563 74%)';
+    head1.style.backgroundImage = 'linear-gradient(50deg, #65799b 0%, #5e2563 74%)';
 
 }
 
