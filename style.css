@@ -89,7 +89,6 @@ section:nth-child(2n + 1) {
     }
 
     #navv {
-
         padding: 0;
         z-index: 20;
     }
@@ -673,7 +672,12 @@ section:nth-child(2n + 1) {
    padding-bottom: 100%;
    padding-top: 30px;
    height: 0;
-   overflow: hidden;
+    overflow: hidden;
+    -webkit-position: relative;
+   -webkit-padding-bottom: 100%;
+   -webkit-padding-top: 30px;
+   -webkit-height: 0;
+   -webkit-overflow: hidden;
 }
    /*.big-container {*/
    /*    display: none;*/
@@ -1844,10 +1848,11 @@ textarea {
 #calendar{
     height: 100%;
 }
+
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
-   position: absolute;
+    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
