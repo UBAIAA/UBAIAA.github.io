@@ -26,10 +26,7 @@
                 <a class="nav-link white" href="microg.html">Micro-G</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link white" href="members.html">Members</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link white" href="#">Dashboard</a>
+                <a class="nav-link white" href="#">Calendar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link white" href="index.html#contact">Contact</a>
@@ -58,10 +55,7 @@
             <a class="nav-link white" href="microg.html">Micro-G</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link white" href="members.html">Members</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link white" href="#">Dashboard</a>
+            <a class="nav-link white" href="#">Calendar</a>
         </li>
         <li class="nav-item">
             <a class="nav-link white" href="index.html#contact">Contact</a>
@@ -70,95 +64,11 @@
 </nav>
 <div id="real-dashboard">
     <h1 class="section-heading blue-grad" id="dash-head" style="margin-bottom: 10px">
-        DashBoard
+        Calendar
     </h1>
     <div id="dashboard-container-mobile">
-        <div style="margin: 0 20px 20px 20px;" class="progress">
-            <div id="prog-mob" class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                 role="progressbar"
-                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            </div>
-        </div>
-        <button onclick="go_light()" type="button" class="btn btn-light">Light</button>
-        <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
-        <div style="margin-top: 20px " class="text-center">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-success">
-                    <input onclick="show_dbf()" type="radio" name="options" id="option1"> DBF
-                </label>
-                <label class="btn btn-outline-warning">
-                    <input onclick="show_micro()" type="radio" name="options" id="option2"> Micro-g
-                </label>
-                <label class="btn btn-outline-danger active">
-                    <input onclick="show_aiaa()" type="radio" name="options" id="option3"> AIAA
-                </label>
-            </div>
-        </div>
-        <div style="margin-top: 20px " class="text-center">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-info active" id="meet">
-                    <input onclick="show_meeting_dash()" type="radio" name="meet" id="option4" checked> Meetings
-                </label>
-                <label class="btn btn-outline-primary " id="event">
-                    <input onclick="show_event_dash()" type="radio" name="event" id="option5"> Events
-                </label>
-            </div>
-        </div>
-        <hr>
-
-        <div id="dash-body-dbf" style="padding-top: 20px">
-            <div id="dbf-meetings">
-                <div class="eboard-row">
-                    <div id="dbf-meet-mob">
-
-                    </div>
-                </div>
-            </div>
-            <div id="dbf-events">
-                <div class="eboard-row">
-                    <div id="dbf-eve-mob">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="dash-body-micro" style="padding-top: 20px">
-            <div id="micro-meetings">
-                <div class="eboard-row">
-                    <div id="micro-meet-mob">
-
-                    </div>
-                </div>
-            </div>
-            <div id="micro-events">
-                <div class="eboard-row">
-                    <div id="micro-eve-mob">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="dash-body-aiaa" style="padding-top: 20px">
-            <div id="aiaa-meetings">
-                <div class="eboard-row">
-                    <div id="aiaa-meet-mob">
-
-                    </div>
-                </div>
-            </div>
-            <div id="aiaa-events">
-                <div class="eboard-row">
-                    <div id="aiaa-eve-mob">
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="calendar">
         <div>
-            <h1 class="section-heading blue-grad" id="dash-head-2" style="margin-bottom: 10px">
-                Calendar
-            </h1>
             <div class="link-box">
                 <a class="link-box-button" id="calendar-link" target="_blank"
                    href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnVmZmFsb2FpYWFAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%230B8043&amp;mode=AGENDA"><span> <i
@@ -167,100 +77,13 @@
             <br>
         </div>
         <div class="responsive-iframe-container">
-
             <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnVmZmFsb2FpYWFAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%230B8043&amp;mode=AGENDA"
                     style="border:0" width="800" height="1200" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
     </div>
     <div id="dashboard-container" class="text-center">
-        <h3 id="semester">The semester is <span id="done"></span> done</h3>
-        <div style="margin-bottom: 20px;" class="progress" id="prog_bar">
-            <div id="prog" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            </div>
-        </div>
-        <button onclick="go_light()" type="button" class="btn btn-light">Light</button>
-        <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
-        <br>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 15px">
-            <label class="btn btn-outline-info  active">
-                <input onclick="show_meeting()" type="radio" name="options" id="option1" checked> Meetings
-            </label>
-            <label class="btn btn-outline-danger ">
-                <input onclick="show_event()" type="radio" name="options" id="option3"> Events
-            </label>
-        </div>
-        <div id="dash-back">
-            <div id="dash-body">
-                <div id="meetings-desk">
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">DBF</h3>
-                        </center>
-                        <div id="dbf-meet">
-                            <!--                            <a href="#" class="card-link">-->
-                            <!--                                <div class="card dash-card dbf text-center dash-cards">-->
-                            <!--                                    <div class="card-body dash-card-body">-->
-                            <!--                                        <h5 style="margin: 0" class="card-title">tgtgt</h5>-->
-                            <!--                                    </div>-->
-                            <!--                                </div>-->
-                            <!--                            </a>-->
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">Micro-g</h3>
-                        </center>
-                        <div id="micro-meet">
-
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">AIAA</h3>
-                        </center>
-                        <div id="aiaa-meet">
-
-                        </div>
-                    </div>
-                </div>
-                <div id="events-desk">
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">DBF</h3>
-                        </center>
-                        <div id="dbf-eve">
-
-                        </div>
-
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">Micro-g</h3>
-                        </center>
-                        <div id="micro-eve">
-
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">AIAA</h3>
-                        </center>
-                        <div id="aiaa-eve">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div id="calendar">
-        <div>
-            <h1 class="section-heading blue-grad" id="dash-head-2" style="margin-bottom: 10px">
-                Calendar
-            </h1>
-            <br>
-        </div>
+        <div id="calendar">
         <div class="responsive-iframe-container">
             <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YnVmZmFsb2FpYWFAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=1&amp;title=UB_AIAA%20Calendar"
                     style="border:0" width="900" height="700" frameborder="0" scrolling="no"></iframe>
